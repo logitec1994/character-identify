@@ -20,8 +20,17 @@
           python312Packages.pip
           python312Packages.setuptools
           uv
-          stdenv.cc.cc.lib
         ];
+
+        shellHook = ''
+          export LD_LIBRARY_PATH="${pkgs.lib.makeLibraryPath [
+            pkgs.stdenv.cc.cc.lib
+            pkgs.zlib
+            pkgs.libxcb
+            pkgs.libGL
+            pkgs.glib
+          ]}:$LD_LIBRARY_PATH"
+        '';
       };
     };
 }
