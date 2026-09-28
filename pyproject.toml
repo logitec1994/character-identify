@@ -8,9 +8,14 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
+    "dbus-next>=0.2.3",
     "insightface>=2.0",
+    "mediapipe>=1.0.1",
+    "mss>=10.2.0",
     "numpy>=2.5.3",
     "opencv-python>=5.0.0.93",
+    "supervision>=0.30.5",
+    "trackers>=2.6.1",
 ]
 
 [project.scripts]

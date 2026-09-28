@@ -29,6 +29,11 @@
             pkgs.libxcb
             pkgs.libGL
             pkgs.glib
+            
+            pkgs.libX11
+            pkgs.libXext
+            pkgs.libSM
+            pkgs.libICE
           ]}:$LD_LIBRARY_PATH"
         '';
       };
