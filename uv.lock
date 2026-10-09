@@ -147,6 +147,7 @@ dependencies = [
     { name = "mss" },
     { name = "numpy" },
     { name = "opencv-python" },
+    { name = "pipewire-capture" },
     { name = "supervision" },
     { name = "trackers" },
 ]
@@ -159,6 +160,7 @@ requires-dist = [
     { name = "mss", specifier = ">=10.2.0" },
     { name = "numpy", specifier = ">=2.5.3" },
     { name = "opencv-python", specifier = ">=5.0.0.93" },
+    { name = "pipewire-capture", specifier = ">=0.3.0" },
     { name = "supervision", specifier = ">=0.30.5" },
     { name = "trackers", specifier = ">=2.6.1" },
 ]
@@ -1047,6 +1049,18 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/18/f0/a5595c1e8c3ae44b9828cb2f0fa8155e5095ef04d6327b8f61cf44a3df85/pillow-12.3.0-cp315-cp315t-win32.whl", hash = "sha256:1657923d2d45afb66526e5b933e5b3052e6bdea196c90d3abb2424e18c77dae8", size = 6474384, upload-time = "2026-07-01T11:56:18.855Z" },
     { url = "https://files.pythonhosted.org/packages/e4/04/62bcd9f844984c5938d3b05264a61d797a29d3e0812341a8204af70bbdee/pillow-12.3.0-cp315-cp315t-win_amd64.whl", hash = "sha256:8cd2f7bdda092d99c9fc2fb7391354f306d01443d22785d0cbfafa2e2c8bb418", size = 7243537, upload-time = "2026-07-01T11:56:21.214Z" },
     { url = "https://files.pythonhosted.org/packages/3d/68/1f3066acedf37673694a7141381d8f811ae97f30d34413d236abe7d489f1/pillow-12.3.0-cp315-cp315t-win_arm64.whl", hash = "sha256:06ff022112bc9cbf83b60f8e028d94ad87b60621706487e65f673de61610ab59", size = 2567491, upload-time = "2026-07-01T11:56:23.506Z" },
+]
+
+[[package]]
+name = "pipewire-capture"
+version = "0.3.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/52/22/05e8f75635de3ade4d97bdc4b4a6c84f65789689c16dff99b4bb047b7952/pipewire_capture-0.3.0-cp39-abi3-manylinux_2_34_aarch64.whl", hash = "sha256:21fcc3a2b32585a9226691b885a6956d0ac29f11a259cfe63954ba1318e38216", size = 2532397, upload-time = "2026-09-18T06:17:41.989Z" },
+    { url = "https://files.pythonhosted.org/packages/a1/2a/6e4710e5b03107afa57f9045a06d315b2e430420acc97ec4b4ee2472ee4e/pipewire_capture-0.3.0-cp39-abi3-manylinux_2_34_x86_64.whl", hash = "sha256:49ba082c85003219ec2218d19b7d217df66d660824f21242121486bd26502f05", size = 2547982, upload-time = "2026-09-18T06:17:43.733Z" },
 ]
 
 [[package]]

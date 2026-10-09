@@ -19,6 +19,8 @@
           python312
           python312Packages.pip
           python312Packages.setuptools
+          python312Packages.pygobject3
+          gtk3
           uv
         ];
 
@@ -34,6 +36,8 @@
             pkgs.libXext
             pkgs.libSM
             pkgs.libICE
+            
+            pkgs.pipewire
           ]}:$LD_LIBRARY_PATH"
         '';
       };
